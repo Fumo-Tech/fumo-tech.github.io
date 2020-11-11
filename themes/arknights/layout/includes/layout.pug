@@ -62,7 +62,7 @@ html(lang=config.language)
           a(href=config.root)#logo
             img(src=asideLogo, alt="Logo")
           h1#Dr
-            a(href= theme.aside.dr)=' Dr.' + config.author
+            a(href= theme.aside.dr)= config.author
           section#total
             a#total-archives(href= config.root + "archives")
               span.total-title Archives Total:
