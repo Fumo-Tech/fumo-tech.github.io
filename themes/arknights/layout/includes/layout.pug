@@ -51,6 +51,7 @@ html(lang=config.language)
       nav
         each url, label in theme.menu
           a(href= config.root + url)= label
+        //a(href= "https://www.youtube.com/channel/UCJ_rSw-f8dvKKf9XlFSEDrg") Youtube
     main(style=mainStyle)
       article
         if body
@@ -73,6 +74,13 @@ html(lang=config.language)
             #total-categories
               span.total-title Categories:
               span.total-number= site.categories.length
+          link(rel="stylesheet", href="/css/socials.css")
+          #socials.socials
+            br
+            a(href=theme.social.youtube.url)
+              img(src=theme.social.youtube.img, alt="social-youtube")
+            a(href=theme.social.twitter.url)
+              img(src=theme.social.twitter.img, alt="social-twitter")
         #aside-block(style= asideBlock)
           block aside-block
         footer(style=footerStyle)
